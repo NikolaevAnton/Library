@@ -56,15 +56,47 @@
 		4EE518F32747AD9D001678BC /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				4EE518F42747AD9D001678BC /* AppDelegate.swift */,
-				4EE518F62747AD9D001678BC /* SceneDelegate.swift */,
-				4EE518F82747AD9D001678BC /* ViewController.swift */,
-				4EE518FA2747AD9D001678BC /* Main.storyboard */,
-				4EE518FD2747AD9E001678BC /* Assets.xcassets */,
-				4EE518FF2747AD9E001678BC /* LaunchScreen.storyboard */,
-				4EE519022747AD9E001678BC /* Info.plist */,
+				4EE519092747AE1F001678BC /* ViewControllers */,
+				4EE5190A2747AE3B001678BC /* StoryBoards */,
+				4EE519082747ADDF001678BC /* App */,
+				4EE5190B2747AE53001678BC /* Resources */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		4EE519082747ADDF001678BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4EE518F62747AD9D001678BC /* SceneDelegate.swift */,
+				4EE518F42747AD9D001678BC /* AppDelegate.swift */,
+				4EE519022747AD9E001678BC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4EE519092747AE1F001678BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EE518F82747AD9D001678BC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4EE5190A2747AE3B001678BC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				4EE518FA2747AD9D001678BC /* Main.storyboard */,
+				4EE518FF2747AD9E001678BC /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		4EE5190B2747AE53001678BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EE518FD2747AD9E001678BC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Library/Info.plist;
+				INFOPLIST_FILE = Library/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Library/Info.plist;
+				INFOPLIST_FILE = Library/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
