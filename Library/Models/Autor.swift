@@ -10,6 +10,7 @@ import Foundation
 struct Autor {
     let name: String
     let yearsOfLife: String
+    let books: String
 }
 
 extension Autor {
@@ -18,7 +19,8 @@ extension Autor {
         let names = DataManager.shared.fullNameAutor.shuffled()
         for index in 0..<names.count {
             let autor = Autor(name: names[index],
-                              yearsOfLife: MoreInfoAboutAutors.getYearsOfLife(nameAutor: names[index]))
+                              yearsOfLife: MoreInfoAboutAutors.getYearsOfLife(nameAutor: names[index]),
+                              books: MoreInfoAboutAutors.getBestBook(nameAutor: names[index]))
             autors.append(autor)
         }
         return autors

@@ -28,7 +28,6 @@ class DataManager {
 struct MoreInfoAboutAutors {
     static func getYearsOfLife(nameAutor: String) -> String {
         var yearsOfLife = ""
-        
         switch nameAutor {
         case "Айзек Азимов":
             yearsOfLife = "2 января 1920 г. - 6 апреля 1992 г"
@@ -47,8 +46,29 @@ struct MoreInfoAboutAutors {
         default:
             yearsOfLife = "7 декабря 1915 г. - 17 марта 1978 г."
         }
-        
-        
         return yearsOfLife
+    }
+    
+    static func getBestBook(nameAutor: String) -> String {
+        var bestBook = ""
+        switch nameAutor {
+        case "Айзек Азимов":
+            bestBook = "Основание * Я, робот * Основание и Империя"
+        case "Пол Андерсон":
+            bestBook = "Три сердца и три льва"
+        case "Альфред Бестер":
+            bestBook = "Тигр! Тигр!"
+        case "Джеймс Блиш":
+            bestBook = "Star Trek 1"
+        case "Нельсон С. Бонд":
+            bestBook = "Colossus of Chaos"
+        case "Фредерик Браун":
+            bestBook = "Ночь невнятной болтовни"
+        case "Рэй Брэдбери":
+            bestBook = "451 градус по Фаренгейту"
+        default:
+            bestBook = "Дальний прыжок"
+        }
+        return bestBook
     }
 }

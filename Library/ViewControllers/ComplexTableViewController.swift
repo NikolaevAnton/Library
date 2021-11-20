@@ -48,7 +48,7 @@ class ComplexTableViewController: UITableViewController {
             content.text = autors[indexPath.section].yearsOfLife
             //content.image = UIImage(systemName: Contacts.phone.rawValue)
         default:
-            content.text = "2"
+            content.text = autors[indexPath.section].books
             //content.image = UIImage(systemName: Contacts.email.rawValue)
         }
         
