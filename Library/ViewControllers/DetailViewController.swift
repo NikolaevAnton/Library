@@ -15,10 +15,13 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var quoteLabel: UILabel!
     
+    @IBOutlet var photo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameAutor.text = autor.name
-        quoteLabel.text = MoreInfoAboutAutors.getQuote(nameAutor: autor.name)
+        quoteLabel.text = autor.quote
+        photo.image = Autor.getPhoto(nameAutor: autor.name)
     }
 
 }

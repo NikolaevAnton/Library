@@ -136,19 +136,29 @@
                                     <constraint firstAttribute="trailing" secondItem="REF-vD-KPc" secondAttribute="trailing" id="tme-aD-KSO"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nML-va-p4L">
+                                <rect key="frame" x="50" y="512" width="314" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="IlQ-Ax-MpX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oWE-CK-eYU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oWE-CK-eYU" firstAttribute="trailing" secondItem="T5p-W9-xEf" secondAttribute="trailing" constant="20" id="81N-6M-nT1"/>
+                            <constraint firstItem="nML-va-p4L" firstAttribute="leading" secondItem="oWE-CK-eYU" secondAttribute="leading" constant="50" id="Fmi-kV-zTq"/>
                             <constraint firstItem="T5p-W9-xEf" firstAttribute="leading" secondItem="oWE-CK-eYU" secondAttribute="leading" constant="20" id="R0R-Of-jYF"/>
                             <constraint firstItem="T5p-W9-xEf" firstAttribute="centerX" secondItem="WAz-km-qHL" secondAttribute="centerX" id="YJB-Gr-MH8"/>
+                            <constraint firstItem="oWE-CK-eYU" firstAttribute="trailing" secondItem="nML-va-p4L" secondAttribute="trailing" constant="50" id="buB-YF-Tcp"/>
+                            <constraint firstItem="oWE-CK-eYU" firstAttribute="bottom" secondItem="nML-va-p4L" secondAttribute="bottom" constant="50" id="fc8-WK-kdB"/>
                             <constraint firstItem="T5p-W9-xEf" firstAttribute="top" secondItem="oWE-CK-eYU" secondAttribute="top" constant="20" id="heR-lm-4w9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oPy-kv-40q"/>
                     <connections>
                         <outlet property="nameAutor" destination="XlW-nb-TaQ" id="wfo-uy-o7Z"/>
+                        <outlet property="photo" destination="nML-va-p4L" id="6JD-WA-tUx"/>
                         <outlet property="quoteLabel" destination="REF-vD-KPc" id="sXL-HR-5BN"/>
                     </connections>
                 </viewController>

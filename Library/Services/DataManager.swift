@@ -22,6 +22,17 @@ class DataManager {
         "Ли Брэкетт"
     ]
     
+    let photoAutors = [
+        "Айзек Азимов"    : "azimov",
+        "Пол Андерсон"    : "pol",
+        "Альфред Бестер"  : "alfred",
+        "Джеймс Блиш"     : "blish",
+        "Нельсон С. Бонд" : "bond",
+        "Фредерик Браун"  : "brown",
+        "Рэй Брэдбери"    : "bred",
+        "Ли Брэкетт"      : "brackett"
+    ]
+    
     private init() {}
 }
 
