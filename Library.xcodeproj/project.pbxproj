@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E35ABC72749075E006053DB /* Autor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35ABC62749075E006053DB /* Autor.swift */; };
+		4E35ABCA274907E8006053DB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35ABC9274907E8006053DB /* DataManager.swift */; };
 		4EE518F52747AD9D001678BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE518F42747AD9D001678BC /* AppDelegate.swift */; };
 		4EE518F72747AD9D001678BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE518F62747AD9D001678BC /* SceneDelegate.swift */; };
 		4EE518FC2747AD9D001678BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE518FA2747AD9D001678BC /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E35ABC62749075E006053DB /* Autor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autor.swift; sourceTree = "<group>"; };
+		4E35ABC9274907E8006053DB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4EE518F12747AD9D001678BC /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE518F42747AD9D001678BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE518F62747AD9D001678BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E35ABC427490715006053DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E35ABC62749075E006053DB /* Autor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E35ABC8274907A8006053DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E35ABC9274907E8006053DB /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4EE518E82747AD9D001678BC = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +84,8 @@
 			children = (
 				4EE519092747AE1F001678BC /* ViewControllers */,
 				4EE5190A2747AE3B001678BC /* StoryBoards */,
+				4E35ABC427490715006053DB /* Models */,
+				4E35ABC8274907A8006053DB /* Services */,
 				4EE519082747ADDF001678BC /* App */,
 				4EE5190B2747AE53001678BC /* Resources */,
 			);
@@ -180,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE519132747B997001678BC /* ComplexTableViewController.swift in Sources */,
+				4E35ABCA274907E8006053DB /* DataManager.swift in Sources */,
+				4E35ABC72749075E006053DB /* Autor.swift in Sources */,
 				4EE5190F2747B8F8001678BC /* TabBarController.swift in Sources */,
 				4EE518F52747AD9D001678BC /* AppDelegate.swift in Sources */,
 				4EE519152747C929001678BC /* DetailViewController.swift in Sources */,

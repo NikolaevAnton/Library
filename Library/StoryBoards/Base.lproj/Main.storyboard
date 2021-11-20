@@ -147,6 +147,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oPy-kv-40q"/>
+                    <connections>
+                        <outlet property="nameAutor" destination="XlW-nb-TaQ" id="wfo-uy-o7Z"/>
+                        <outlet property="quoteLabel" destination="REF-vD-KPc" id="sXL-HR-5BN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEu-DR-80L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

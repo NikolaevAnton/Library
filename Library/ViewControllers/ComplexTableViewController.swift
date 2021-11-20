@@ -9,6 +9,8 @@ import UIKit
 
 class ComplexTableViewController: UITableViewController {
 
+    var autors:[Autor] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,12 +24,12 @@ class ComplexTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "autor"
+        autors[section].name
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 5
+        return autors.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,14 +96,15 @@ class ComplexTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? DetailViewController else { return }
+            detailVC.autor = autors[indexPath.section]
+        }
     }
-    */
+    
 
 }
