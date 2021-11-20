@@ -45,7 +45,7 @@ class ComplexTableViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            content.text = "1"
+            content.text = autors[indexPath.section].yearsOfLife
             //content.image = UIImage(systemName: Contacts.phone.rawValue)
         default:
             content.text = "2"
