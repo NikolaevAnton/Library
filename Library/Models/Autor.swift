@@ -20,10 +20,12 @@ extension Autor {
         var autors:[Autor] = []
         let names = DataManager.shared.fullNameAutor.shuffled()
         for index in 0..<names.count {
-            let autor = Autor(name: names[index],
-                              yearsOfLife: MoreInfoAboutAutors.getYearsOfLife(nameAutor: names[index]),
-                              books: MoreInfoAboutAutors.getBestBook(nameAutor: names[index]),
-                              quote: MoreInfoAboutAutors.getQuote(nameAutor: names[index]))
+            let autorName = names[index]
+            let allInfo = DataManager.getAllInfo(nameAutor: autorName)
+            let autor = Autor(name: autorName,
+                              yearsOfLife: allInfo.yearsOfLife,
+                              books: allInfo.bestBook,
+                              quote: allInfo.quote)
             autors.append(autor)
         }
         return autors
