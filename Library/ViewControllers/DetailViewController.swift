@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameAutor.text = autor.name
+        quoteLabel.text = MoreInfoAboutAutors.getQuote(nameAutor: autor.name)
     }
 
 }
